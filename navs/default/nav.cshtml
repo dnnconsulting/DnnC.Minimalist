@@ -1,0 +1,84 @@
+﻿@using DotNetNuke.Web.DDRMenu;
+@using System.Dynamic;
+@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage<dynamic>
+
+@{ 
+    var root = Model.Source.root;    
+}
+
+<nav class="navmenu navmenu-default" role="navigation">
+    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+
+@helper RenderNodes(IList<MenuNode> nodes) {
+    var subNum = 1;
+    if (nodes.Count > 0) {
+        <ul class="nav navbar-nav">
+
+            @foreach (var node in nodes)
+            {
+
+                if (node.HasChildren())
+                {
+                    var subMenuId = "subNav-" + subNum;
+                    if (node.Selected)
+                    {
+                        <li class="active">
+                            <a href="#" data-target="#@subMenuId" data-toggle="collapse" class="collapsed">@node.Text<span class="pull-right"></span></a>
+                            @RenderChildNodes(node.Children, subMenuId)
+                        </li>
+                    }
+                    else
+                    {
+                        <li>
+                            <a href="#" data-target="#@subMenuId" data-toggle="collapse" class="collapsed">@node.Text<span class="pull-right"></span></a>
+                            @RenderChildNodes(node.Children, subMenuId)
+                        </li>
+                    } <!-- end selected -->
+                    subNum++;
+                }
+                else
+                {
+
+                    if (node.Selected)
+                    {
+                        <li class="active"><a href="@node.Url">@node.Text</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="@node.Url">@node.Text</a></li>
+                    } <!-- end selected -->
+
+                }
+
+
+
+
+
+
+
+                
+            }<!-- ./foreach loop -->
+        </ul><!-- ./navbar-nav -->
+    }
+} <!-- ./helper -->
+
+@helper RenderChildNodes(IList<MenuNode> nodes, string subMenuId) {
+    if (nodes.Count > 0) {
+        <div class="collapse" id="@subMenuId" style="height: 0px;">
+            <ul class="nav nav-list">
+
+                @foreach (var node in nodes)
+                {
+                    <li><a href="@node.Url">@node.Text</a></li> 
+                }
+            </ul>
+        </div>
+    } <!-- ./if -->
+} <!-- ./helper -->
+
+@RenderNodes(root.Children)
+
+    </div> <!-- ./sidebar-navbar-collapse -->
+</nav><!-- ./nav-->
+
+
