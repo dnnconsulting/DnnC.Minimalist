@@ -1,0 +1,2 @@
+﻿<dnn:DnnJsInclude ID="DnnJsBootstrap" runat="server" FilePath="assets/js/bootstrap.min.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" />
+<dnn:DnnJsInclude ID="DnnJsMinimalist" runat="server" FilePath="assets/js/minimalist.js" PathNameAlias="SkinPath" ForceProvider="DnnFormBottomProvider" />

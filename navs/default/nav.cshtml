@@ -7,11 +7,14 @@
 }
 
 <nav class="navmenu navmenu-default" role="navigation">
-    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+    <!--div class="navbar-collapse collapse sidebar-navbar-collapse"-->
+        <div class="navbar sidebar-navbar-collapse">
 
-@helper RenderNodes(IList<MenuNode> nodes) {
-    var subNum = 1;
-    if (nodes.Count > 0) {
+            @helper RenderNodes(IList<MenuNode> nodes)
+            {
+var subNum = 1;
+if (nodes.Count > 0)
+{
         <ul class="nav navbar-nav">
 
             @foreach (var node in nodes)
@@ -56,29 +59,31 @@
 
 
 
-                
+
             }<!-- ./foreach loop -->
         </ul><!-- ./navbar-nav -->
-    }
+}
 } <!-- ./helper -->
 
-@helper RenderChildNodes(IList<MenuNode> nodes, string subMenuId) {
-    if (nodes.Count > 0) {
+            @helper RenderChildNodes(IList<MenuNode> nodes, string subMenuId)
+            {
+if (nodes.Count > 0)
+{
         <div class="collapse" id="@subMenuId" style="height: 0px;">
             <ul class="nav nav-list">
 
                 @foreach (var node in nodes)
                 {
-                    <li><a href="@node.Url">@node.Text</a></li> 
+                    <li><a href="@node.Url">@node.Text</a></li>
                 }
             </ul>
         </div>
-    } <!-- ./if -->
+} <!-- ./if -->
 } <!-- ./helper -->
 
-@RenderNodes(root.Children)
+            @RenderNodes(root.Children)
 
-    </div> <!-- ./sidebar-navbar-collapse -->
+        </div> <!-- ./sidebar-navbar-collapse -->
 </nav><!-- ./nav-->
 
 

@@ -3,8 +3,6 @@
 
 A free open source responsive skin\theme for Dnn (DotNetNuke) using Bootstrap3.
 
-BETA RELEASE OF THE dNNmINIMALIST THEME
-
 ## Warning : Install on Dnn 08.00.00
 There is a small bug in this version of Dnn that will stop the menu showing.
 To solve this is quite easy to do by following theses steps below:
