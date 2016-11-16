@@ -6,6 +6,9 @@
 <hr/>
 	<h3>About the DnnMinimalist Theme</h3>
 
+	<h4>Version 01.00.01</h4><br />
+	Fixed the missing files.
+
 	<h4>Version 01.00.00</h4><br />
 	Intial release of the DnnMinimalist theme using Bootstrap v3.3.7 and DNN 8
 
