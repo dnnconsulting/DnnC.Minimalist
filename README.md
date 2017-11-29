@@ -11,17 +11,21 @@ Go to '/Portals/' folder of your Dnn install
 In this folder you will find a file called 'web.config'
 Open this file and search for the following 3 lines of html
 
-`<host factoryType="System.Web.Mvc.MvcWebRazorHostFactory, System.Web.Mvc"/>`
+```
+<host factoryType="System.Web.Mvc.MvcWebRazorHostFactory, System.Web.Mvc"/>
 
-`<add namespace="DotNetNuke.Web.Mvc.Helpers"/>`
-`<add namespace="Dnn.Modules.DynamicContentViewer.Helpers"/>`
+<add namespace="DotNetNuke.Web.Mvc.Helpers"/>
+<add namespace="Dnn.Modules.DynamicContentViewer.Helpers"/>
+```
 
 Change the lines above to this:
 
-`<!--<host factoryType="System.Web.Mvc.MvcWebRazorHostFactory, System.Web.Mvc"/>-->`
+```
+<!--<host factoryType="System.Web.Mvc.MvcWebRazorHostFactory, System.Web.Mvc"/>-->
 
-`<!--<add namespace="DotNetNuke.Web.Mvc.Helpers"/>-->`
-`<!--<add namespace="Dnn.Modules.DynamicContentViewer.Helpers"/>-->`
+<!--<add namespace="DotNetNuke.Web.Mvc.Helpers"/>-->
+<!--<add namespace="Dnn.Modules.DynamicContentViewer.Helpers"/>-->
+```
 
 Save the file and the menu's should display correctly.
 
