@@ -7,7 +7,7 @@
 
 <!-- Start : Header Section -->
 <div class="header-spacer"></div>
-<header class="controlbarfix navbar-fixed-top">
+<header class="controlbarfix navbar-top">
 
     <div class="row">
         <!-- start : logo -->
@@ -17,30 +17,20 @@
 
         <!-- start : right side function buttons -->
         <div class="col-xs-9 text-right">                
-            <!-- start : menu tab --> 
-                <!--#include file = "includes/hamburger.ascx" -->                 
-            <!-- end : menu tab -->              
-                
-            <!-- start profle functions -->
-                <!--#include file = "includes/profile-functions.ascx" -->
-            <!-- start profle functions -->
+            <!-- start : menu tab -->          
+            <!-- end : menu tab -->
         </div><!-- end : right side function buttons -->
     </div><!-- ./row -->
 
-    <!-- Start : Menu bar off canvas -->
-    <div id="slideout" class="slideoutfix">
-        <div class="menu-content">            
-            <div class="nav-system">
-                <!-- start : search area -->
-                    <!--#include file = "includes/search.ascx" -->
-                <!-- end : search area -->
-
-                <!-- start : nav holder -->
-                    <!--#include file = "includes/menu.ascx" -->
-                <!-- end : nav holder -->                
-            </div>               
-        </div>    
-    </div><!-- ./End : Menu bar off canvas -->
+    <!-- Start : Nav Menu canvas -->
+    <div class="row">
+        <nav id="skin_nav">
+            <div id="nav_box">
+                <dnn:MENU MenuStyle="navs/StandardMenu" runat="server"></dnn:MENU>
+            </div>
+        </nav>
+    </div>
+    <!-- ./End : Nav Menu off canvas -->
   
 </header><!-- End : Header Section -->
 
@@ -53,7 +43,7 @@
                     <!--#include file = "includes/breadcrumb.ascx" -->
                 <!-- end : breadcrumb -->  
             </div>
-            <div runat="server" id="SocialPane" class="col-md-6 text-right"  containersrc="Social.ascx" containername="DnnMinimalist" containertype="G" />
+            <div runat="server" id="SocialPane" class="col-md-6 text-right"  containersrc="Social.ascx" containername="RadiaICSwedmonds" containertype="G" />
         </div>
     </div>
 </section><!-- end : Breadcrumb -->
@@ -72,14 +62,8 @@
     <!--#include file = "includes/_content-panes-footer.ascx" -->
     <div class="sub-footer">
         <!--#include file = "includes/footer-legal.ascx" -->
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center dnnc-link">
-                    <a href="http://www.dnnconsulting.nl" target="_blank">Dnn theme created by DnnConsulting.nl</a></div>
-            </div>
-        </div>
     </div><!-- ./sub-footer -->
-</footer><!-- Start : footer -->
+</footer>
+<!-- End : footer -->
 
 <!--#include file = "includes/system/theme-footer-includes.ascx" -->
