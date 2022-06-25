@@ -1,4 +1,4 @@
-﻿<div class="container">
+﻿<div class="container-fluid">
     <div class="row"><div runat="server" id="FooterTop" class="col-md-12" /></div>
     <div class="row">
         <div runat="server" id="FooterLeftPane" class="col-md-4" />

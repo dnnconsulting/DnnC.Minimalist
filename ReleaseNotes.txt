@@ -1,4 +1,10 @@
-﻿<h3>DnnBootster Theme for Dnn</h3>
+﻿<h3>Radia IC Theme for Dnn - Swedish Edmonds</h3>
+	JaredOnTech.com <br/>
+	Jared Shockley<br />
+	<a href="mailto:info@jaredontech.com">info@jaredontech.com</a><br />
+	<a href=https://www.jaredontech.com>https://www.jaredontech.com</a><br />
+<hr/>
+<h4>DnnBootster Theme for Dnn</h4>
 	DnnConsulting.nl <br/>
 	Geoff Barlow<br />
 	<a href="mailto:info@dnnconsulting.nl">info@DnnConsulting.nl</a><br />
@@ -11,5 +17,10 @@
 
 	<h4>Version 01.00.00</h4><br />
 	Intial release of the DnnMinimalist theme using Bootstrap v3.3.7 and DNN 8
+<hr/>
+	<h3>About the RadiaICSwedishEdmondsTheme</h3>
+
+	<h4>Version 01.00.00</h4><br />
+	Intial release of the theme using DnnMinimalist 
 
 </div>

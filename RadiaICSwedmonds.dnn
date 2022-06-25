@@ -1,0 +1,68 @@
+<dotnetnuke type="Package" version="6.0">
+  <packages>
+    <package name="RadiaIC.Skins.Swedmonds" type="Skin" version="01.00.00">
+      <friendlyName>RadiaICSwedmonds</friendlyName>
+      <description>Radia Imaging Center Skin - Swedish Edmonds</description>
+      <owner>
+        <name>Jared Shockley</name>
+        <organization>Jared on Tech, LLC</organization>
+        <url>http://www.jaredontech.com</url>
+        <email>info@jaredontech.com</email>
+      </owner>
+      <azureCompatible>true</azureCompatible>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.03.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Skin">
+          <skinFiles>
+            <skinName>RadiaICSwedmonds</skinName>
+            <basePath>Portals/_default/Skins/RadiaICSwedmonds</basePath>
+          </skinFiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Portals/_default/Skins/RadiaICSwedmonds</basePath>
+            <resourceFile>
+              <name>Resources-skin.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+    <package name="RadiaIC.Containers.Swedmonds" type="Container" version="01.00.00">
+      <friendlyName>RadiaICSwedmonds</friendlyName>
+      <description>Radia Imaging Center Containers - Swedish Edmonds</description>
+      <owner>
+        <name>Jared Shockley</name>
+        <organization>Jared on Tech, LLC</organization>
+        <url>http://www.jaredontech.com</url>
+        <email>info@jaredontech.com</email>
+      </owner>
+      <azureCompatible>true</azureCompatible>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.03.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Container">
+          <containerFiles>
+            <skinName>RadiaICSwedmonds</skinName>
+            <basePath>Portals/_default/Containers/RadiaICSwedmonds</basePath>
+          </containerFiles>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>Portals/_default/Containers/RadiaICSwedmonds</basePath>
+            <resourceFile>
+              <name>Resources-Containers.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

@@ -17,10 +17,6 @@
             <!-- start : menu tab --> 
                 <!--#include file = "includes/hamburger.ascx" -->                 
             <!-- end : menu tab -->              
-                
-            <!-- start profle functions -->
-                <!--#include file = "includes/profile-functions.ascx" -->
-            <!-- start profle functions -->
         </div><!-- end : right side function buttons -->
     </div><!-- ./row -->
 
@@ -41,11 +37,19 @@
   
 </header><!-- End : Header Section -->
 
-<!-- Start: Slider pane -->
-<section>
-    <div id="sliderPane" runat="server" />
-</section>
-<!-- Start: Slider pane -->
+<!-- start : Breadcrumb -->
+<section class="breadcrumb-holder">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 breadcrumb-holder">
+                <!-- start : breadcrumb -->
+                    <!--#include file = "includes/breadcrumb.ascx" -->
+                <!-- end : breadcrumb -->  
+            </div>
+            <div runat="server" id="SocialPane" class="col-md-6 text-right"  containersrc="Social.ascx" containername="RadiaICSwedmonds" containertype="G" />
+        </div>
+    </div>
+</section><!-- end : Breadcrumb -->
 
 <!-- Start : Content Pane : full width -->
  <section class="container">
@@ -61,14 +65,8 @@
     <!--#include file = "includes/_content-panes-footer.ascx" -->
     <div class="sub-footer">
         <!--#include file = "includes/footer-legal.ascx" -->
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center dnnc-link">
-                    <a href="http://www.dnnconsulting.nl" target="_blank">Dnn theme created by DnnConsulting.nl</a></div>
-            </div>
-        </div>
     </div><!-- ./sub-footer -->
-</footer><!-- Start : footer -->
+</footer>
+<!-- End : footer -->
 
 <!--#include file = "includes/system/theme-footer-includes.ascx" -->

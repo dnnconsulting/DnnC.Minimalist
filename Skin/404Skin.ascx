@@ -50,7 +50,7 @@
                     <!--#include file = "includes/breadcrumb.ascx" -->
                 <!-- end : breadcrumb -->  
             </div>
-            <div runat="server" id="SocialPane" class="col-md-6 text-right"  containersrc="Social.ascx" containername="DnnMinimalist" containertype="G" />
+            <div runat="server" id="SocialPane" class="col-md-6 text-right"  containersrc="Social.ascx" containername="RadiaICSwedmonds" containertype="G" />
         </div>
     </div>
 </section><!-- end : Breadcrumb -->
